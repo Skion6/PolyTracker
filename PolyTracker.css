@@ -44,3 +44,31 @@ hr {
     color: rgb(0, 0, 0);
     overflow: hidden;
 }
+
+.center2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 520px;
+    z-index: 1000;
+    border-radius: 30px;
+}
