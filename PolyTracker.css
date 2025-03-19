@@ -1,0 +1,38 @@
+.center {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    text-align: center; /* Ensures text inside is centered */
+    gap: 10px; /* Adds spacing between elements */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px; /* Optional */
+  }
+button {
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+  }
+hr {
+    border-color: rgb(0, 255, 0);
+}
+.centerbox {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    text-align: center; /* Ensures text inside is centered */
+    gap: 10px; /* Adds spacing between elements */
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+}
