@@ -29,10 +29,18 @@ hr {
 }
 .centerbox {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    text-align: center; /* Ensures text inside is centered */
-    gap: 10px; /* Adds spacing between elements */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-radius: 15px;
     background-color: rgb(0, 255, 0);
     color: rgb(0, 0, 0);
+    overflow: hidden;
 }
