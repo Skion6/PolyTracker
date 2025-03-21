@@ -12,7 +12,6 @@ function checkInput2() {
     let correctValue = "TiC!"; 
 
     if (input === correctValue) {
-        console.log(7)
         document.getElementById("popup").style.display = "none";
     } else {
         let inputElement = document.getElementById("pw2");
