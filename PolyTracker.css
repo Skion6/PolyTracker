@@ -43,6 +43,7 @@ hr {
     background-color: rgb(0, 255, 0);
     color: rgb(0, 0, 0);
     overflow: hidden;
+    padding: 2px;
 }
 
 .center2 {
@@ -71,4 +72,21 @@ hr {
     width: 520px;
     z-index: 1000;
     border-radius: 30px;
+}
+.centerbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 50px;
+    width: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    padding: 10px;
 }
