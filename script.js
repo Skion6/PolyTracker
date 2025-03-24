@@ -21,3 +21,16 @@ function checkInput2() {
         console.log(Incorrect)
     }
 }
+
+function secret() {
+    document.getElementById(scrt).innerText = "680135"
+}
+
+function copyText() {
+    const text = document.getElementById("cText").innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Text copied to clipboard!");
+    }).catch(function(err) {
+      alert("Failed to copy text: " + err);
+    });
+  }
