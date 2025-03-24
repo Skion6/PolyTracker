@@ -1,3 +1,3 @@
-#PolyTracker
+PolyTracker
 ------------
 Get polytrack maps
