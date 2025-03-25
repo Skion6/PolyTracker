@@ -7,24 +7,26 @@ function popup_yes() {
     document.getElementById("popup").style.display = "none";
 }
 
-function checkInput2() {
+async function checkInput2() {
     let input = document.getElementById("pw2").value;
-    let correctValue = "TiC!"; 
 
-    if (input === correctValue) {
+    const response = await fetch("https://api.jsonbin.io/v3/b/67e2ec6e8a456b79667c6a22/latest", {
+        headers: { "X-Master-Key": "$2a$10$w2LBLzmtULmc09Io4xUYkuU9oBF.BvfpD8jHdCpOVhz0HczU7NCbW" }  // Use your actual secret key here
+    });
+
+    const data = await response.json();
+    const correctPassword = data.record.password;  
+
+    if (input === correctPassword) {
         document.getElementById("popup").style.display = "none";
     } else {
-        let inputElement = document.getElementById("pw2");
         document.getElementById("pw2").value = "";
         document.getElementById("pw2").placeholder = "Incorrect";
-        inputElement.classList.add("red-placeholder");
-        console.log(Incorrect)
+        document.getElementById("pw2").classList.add("red-placeholder");
     }
 }
 
-function secret() {
-    document.getElementById(scrt).innerText = "680135"
-}
+
 
 function copyText() {
     const text = document.getElementById("cText").innerText;
