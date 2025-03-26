@@ -35,4 +35,31 @@ function copyText() {
     }).catch(function(err) {
       alert("Failed to copy text: " + err);
     });
-  }
+}
+
+function copyText2() {
+    const text = document.getElementById("cText2").innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Text copied to clipboard!");
+    }).catch(function(err) {
+      alert("Failed to copy text: " + err);
+    });
+}
+
+function copyText3() {
+    const text = document.getElementById("cText3").innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Text copied to clipboard!");
+    }).catch(function(err) {
+      alert("Failed to copy text: " + err);
+    });
+}
+
+function copyText4() {
+    const text = document.getElementById("cText4").innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Text copied to clipboard!");
+    }).catch(function(err) {
+      alert("Failed to copy text: " + err);
+    });
+}
