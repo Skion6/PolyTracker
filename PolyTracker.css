@@ -14,6 +14,12 @@ html, body {
     color: rgb(0, 255, 0);
     font-family: arial;
 }
+body:after {
+    content: "";
+    display: block;
+    height: 40px; /* Same as the footer height */
+}
+
 
 .fixed-bottom {
     position: fixed;
@@ -21,7 +27,8 @@ html, body {
     left: 0;
     width: 100%;
     background-color: black;
-    padding: 10px; /* Optional */
+    padding: 10px;
+    height: 30px;
 }
 
 button {
