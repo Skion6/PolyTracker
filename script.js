@@ -63,3 +63,12 @@ function copyText4() {
       alert("Failed to copy text: " + err);
     });
 }
+
+function copyText5() {
+    const text = document.getElementById("cText5").innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Text copied to clipboard!");
+    }).catch(function(err) {
+      alert("Failed to copy text: " + err);
+    });
+}
