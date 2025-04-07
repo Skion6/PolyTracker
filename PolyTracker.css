@@ -1,10 +1,10 @@
 .center {
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    text-align: center; /* Ensures text inside is centered */
-    gap: 10px; /* Adds spacing between elements */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
 html, body {
@@ -14,26 +14,26 @@ html, body {
     color: #007C89;
     font-family: arial;
 }
-body:after {
-    content: "";
-    display: block;
-    height: 40px; /* Same as the footer height */
-}
-
 
 .fixed-bottom {
     position: fixed;
+    background-color: #002e34;
+    border-radius: 15px;
+    padding: 7px;
+    margin: 3px;
+    height: 30px;
+    width: auto;
     bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: #A3E4D7;
-    padding: 10px;
-    height: 30px;
 }
 
 button {
     background-color: #007C89;
     color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    border: #003f46 solid 2px;
+    margin: 3px;
 }
 button:hover {
     background-color: #006973;
