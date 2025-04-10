@@ -11,7 +11,7 @@ async function checkInput2() {
     let input = document.getElementById("pw2").value;
 
     const response = await fetch("https://api.jsonbin.io/v3/b/67f3f7068960c979a57ff95b/latest", {
-        headers: { "X-Access-Key": "$2a$10$NJ/HfLsUKJHwVndIHPD7beGOnwlLvavpq9HZMUVfmrbMAzsvAVBUG" }  // Use your actual secret key here
+        headers: { "X-Access-Key": "SECRETPASS" }  // Use your actual secret key here
     });
 
     const data = await response.json();
